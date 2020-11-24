@@ -41,7 +41,7 @@ export default function ConfirmCodeScreen({route}: { route: any }) {
 
             <TextInput
                 style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10, width: '70%'}}
-                placeholder="Username"
+                placeholder="Code"
                 value={code}
                 onChangeText={setCode}/>
             <Button title="Confirm" onPress={onConfirm}/>

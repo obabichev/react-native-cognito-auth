@@ -11,3 +11,11 @@ yarn start
 Install the Expo app on the phone (Android)
 
 Scan QR code from the running server with this app
+
+## Build Android 
+
+expo build:android
+
+## Build iOS
+
+expo build:ios
