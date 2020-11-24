@@ -6,14 +6,19 @@ export default {
     screens: {
       Root: {
         screens: {
-          TabOne: {
+          Login: {
             screens: {
-              TabOneScreen: 'one',
+              LoginScreen: 'Login',
             },
           },
-          TabTwo: {
+          Register: {
             screens: {
-              TabTwoScreen: 'two',
+              RegisterScreen: 'Register',
+            },
+          },
+          Dashboard: {
+            screens: {
+              DashboardScreen: 'Dashboard',
             },
           },
         },
