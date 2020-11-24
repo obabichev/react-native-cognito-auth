@@ -40,12 +40,12 @@ export default function ConfirmCodeScreen({route}: { route: any }) {
             <Text>You should receive the email with verification code.</Text>
 
             <TextInput
-                style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10}}
+                style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10, width: '70%'}}
                 placeholder="Username"
                 value={code}
                 onChangeText={setCode}/>
             <Button title="Confirm" onPress={onConfirm}/>
-            {error && <Text style={{color: 'red'}}>{error}</Text>}
+            {error ? <Text style={{color: 'red'}}>{error}</Text> : null}
         </View>
     )
 }

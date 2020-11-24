@@ -39,19 +39,19 @@ export default function LoginScreen() {
             />
             <Text style={styles.title}>Login</Text>
             <TextInput
-                style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10}}
+                style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10, width: '70%'}}
                 placeholder="Username"
                 value={username}
                 onChangeText={setUsername}/>
             <TextInput
-                style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10}}
+                style={{height: 40, borderColor: "#0000FF", borderWidth: 1, margin: 10, width: '70%'}}
                 placeholder="Password"
                 autoCompleteType="password"
                 secureTextEntry
                 value={password}
                 onChangeText={setPassword}/>
             <Button title="Login" onPress={onLogin}/>
-            {error && <Text style={{color: 'red'}}>{error}</Text>}
+            {error ? <Text style={{color: 'red'}}>{error}</Text> : null}
         </View>
     );
 }
